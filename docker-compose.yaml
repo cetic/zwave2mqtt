@@ -1,0 +1,27 @@
+version: "2"
+
+services:
+  zwave2mqtt:
+    container_name: zwave2mqtt
+    image: robertslando/zwave2mqtt:latest
+    restart: always
+    tty: true
+    stop_signal: SIGINT
+    networks:
+      - zwave
+    devices:
+      - "/dev/ttyACM0:/dev/ttyACM0"
+    volumes:
+      - ./conf/zwave/store:/usr/src/app/store
+    ports:
+      - "8091:8091"
+
+  mosquitto:
+    container_name: mosquitto
+    image: eclipse-mosquitto
+    restart: always
+    ports:
+      - "1883:1883"
+
+networks:
+  zwave:
