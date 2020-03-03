@@ -10,7 +10,7 @@ services:
     networks:
       - zwave
     devices:
-      - "/dev/ttyACM0:/dev/ttyACM0"
+      - "/dev/zwave:/dev/ttyACM0"
     volumes:
       - ./conf/zwave/store:/usr/src/app/store
     ports:
