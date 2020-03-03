@@ -40,7 +40,7 @@ docker-compose up -d
 
 After the service deployment, with your browser, you can go on the home page : http://`$YOUR_IP`:8091
 
-![HOME_PAGE_PNG](https://hub-creatif.cetic.be/sites/default/files/inline-images/oooo.PNG)
+[HOME_PAGE_PNG](https://hub-creatif.cetic.be/sites/default/files/inline-images/oooo.PNG)
 
 ## Configuration
 
