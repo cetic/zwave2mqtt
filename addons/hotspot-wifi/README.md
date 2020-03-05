@@ -2,6 +2,19 @@
 
 A script is created to automate the process of creating an access point in the Raspberry Pi Zero.It can also handle a bridge connection in case the user plugs an ethernet interface and want to share the network access over the hotspot access point.
 
+## Prerequisites
+
+Install this packages  : 
+
+```
+sudo apt-get remove --purge hostapd -yqq
+sudo apt-get update -yqq
+sudo apt-get upgrade -yqq
+sudo apt-get install hostapd -yqq
+sudo apt-get install dnsmasq -yqq
+sudo apt-get install bridge-utils -yqq
+```
+
 ## Notes
 
 The script must be executed in super user mode, and it accepts two parameters:
