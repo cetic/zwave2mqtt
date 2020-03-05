@@ -1,11 +1,11 @@
-# Control ZWave to MQTT with commande line
+# Control ZWave to MQTT with command-line
 
-This tutorial explain how send and receive data from the ZWave network.
-To iteract with zwave2mqtt in command line, we use mosquitto clients.
+This tutorial explains how to send and receive data from the ZWave network.
+To interact with zwave2mqtt from the command line, we use mosquitto clients.
 
 ## Dependecies
 
-Install mosquitto clients tools :
+Install mosquitto clients tool :
 
 ```
 sudo bash install.sh
@@ -13,7 +13,7 @@ sudo bash install.sh
 
 ## Configuration
 
-To use the both commande you need to put some broker information :
+To use both below commands, put some broker information :
 
 | Parameter | Name       | Default               |
 |:---------:|:----------:|:---------------------:|
@@ -26,14 +26,14 @@ To use the both commande you need to put some broker information :
 
 ### Collect data 
 
-To get ZWave informations you need to execute : 
+To get ZWave information, execute : 
 ```
 mosquitto_sub -h 127.0.0.1 -p 1883 -t '#' -v
 ```
 
 ### Send command
 
-To turn off one wall plug (switch binary) you need :
+To turn off one wall plug (switch binary) :
 * Fix `$LOCATION$` and `$NODE-NAME$`
 * Put `/set` at end of the topic
 * Send message : '0'
@@ -41,9 +41,3 @@ To turn off one wall plug (switch binary) you need :
 ```
 mosquitto_pub -h 127.0.0.1 -p 1883 -t 'zwave/$LOCATION$/$NODE-NAME$/switch_binary/switch/set' -m '0'
 ```
-
-
-
-
-
-
