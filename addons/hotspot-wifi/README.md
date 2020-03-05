@@ -4,7 +4,7 @@ A script is created to automate the process of creating an access point in the R
 
 ## Prerequisites
 
-Install this packages  : 
+Install packages  : 
 
 ```
 sudo bash packages.sh
