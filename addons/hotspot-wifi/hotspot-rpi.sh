@@ -27,16 +27,6 @@ if [[ $# -eq 2 ]]; then
 	APSSID=$2
 fi
 
-apt-get remove --purge hostapd -yqq
-apt-get update -yqq
-apt-get upgrade -yqq
-apt-get install hostapd -yqq
-apt-get install dnsmasq -yqq
-apt-get install bridge-utils -yqq
-
-echo "Installed packages "
-echo "moving to configurations"
-
 #setting the gateway @IP and range 
 cat > /etc/dnsmasq.conf <<EOF
 interface=wlan0
