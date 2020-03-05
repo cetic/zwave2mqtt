@@ -7,12 +7,7 @@ A script is created to automate the process of creating an access point in the R
 Install this packages  : 
 
 ```
-sudo apt-get remove --purge hostapd -yqq
-sudo apt-get update -yqq
-sudo apt-get upgrade -yqq
-sudo apt-get install hostapd -yqq
-sudo apt-get install dnsmasq -yqq
-sudo apt-get install bridge-utils -yqq
+sudo bash packages.sh
 ```
 
 ## Notes
