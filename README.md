@@ -1,10 +1,10 @@
 # zwave2mqtt
 
-This project allow to deploy zwave sensor network on raspberry pi 0w with docker and docker-compose. To manage all data collected, one local brocker is installed (mosquitto).
+This project allows to deploy zwave sensor network on Raspberry Pi 0w with docker and docker-compose. To manage collected data, a local brocker is installed (mosquitto).
 
 ## Getting Started
 
-To deploy the service you need to install raspbian on your raspberry pi 0w : [download raspbian](https://www.raspberrypi.org/downloads/raspbian/)
+To deploy the service, you need to install raspbian on your Raspberry Pi 0w : [download raspbian](https://www.raspberrypi.org/downloads/raspbian/)
 
 ### Prerequisites
 
@@ -18,7 +18,7 @@ sudo apt install git
 
 ### Installing
 
-To deploy the service, you don't need to install any source. All installation will be manage with docker. Each configuration wil be manage by docker-compose. To install this two tools, you can launch the `install.sh` 
+To deploy the service, you don't need to install any source. All installations will be managed by docker. Each configuration wil be managed by docker-compose. To install these two tools, you can run `install.sh` 
 
 ```
 cd ~/zwave2mqtt
@@ -38,25 +38,25 @@ docker-compose up -d
 
 ### Tests
 
-After the service deployment, with your browser, you can go on the home page : http://`$YOUR_IP`:8091
+After deploying the service, in your browser, you can go to the page : http://`$YOUR_IP`:8091
 
 [HOME_PAGE_PNG](https://hub-creatif.cetic.be/sites/default/files/inline-images/oooo.PNG)
 
 ## Configuration
 
-For configuration and more details on ZWave deployement, go to this page step 2 (French link) : http://hub-creatif.ext.cetic.be/node/2
+For configuration and more details on ZWave deployement, go to this page and see Step 2 (French link) : http://hub-creatif.ext.cetic.be/node/2
 
-The configuration explain how : 
+The configuration explains how to: 
 * Manage your ZWave network
 * Configure your MQTT installation
 * Customize your gateway service
 
 ## Built With
 
-* [Docker](https://www.docker.com/) - Use to deploy service
-* [Docker-Compose](https://docs.docker.com/compose/) - Use to management service
-* [Mosquitto](https://mosquitto.org/) - MQTT brocker use to share data
-* [ZWavetoMqtt](https://github.com/OpenZWave/Zwave2Mqtt) - source of the project
+* [Docker](https://www.docker.com/) - Use to deploy the services
+* [Docker-Compose](https://docs.docker.com/compose/) - Use to manage the services
+* [Mosquitto](https://mosquitto.org/) - MQTT brocker Use to share data
+* [ZWavetoMqtt](https://github.com/OpenZWave/Zwave2Mqtt) - Project source
 
 ## Authors
 
@@ -67,4 +67,3 @@ See also the list of [contributors](https://github.com/cetic/zwave2mqtt/graphs/c
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
-
